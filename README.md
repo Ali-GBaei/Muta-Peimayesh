@@ -1,3 +1,4 @@
+
 # 👤Customer Project Management Website
 <img width="1901" height="837" alt="Screenshot 2025-08-19 222635" src="https://github.com/user-attachments/assets/4a8b207d-9399-4c73-8e67-5826dfaa903c" />
 
@@ -7,7 +8,8 @@
 - Up-to-date and unique designs
 <img width="1910" height="834" alt="Screenshot 2025-08-19 222750" src="https://github.com/user-attachments/assets/681d5565-7cc7-4fb0-b80e-f8f7c136ef2a" /><br></br>
 - Safe and secure login page
-<img width="1918" height="832" alt="Screenshot 2025-08-19 222835" src="https://github.com/user-attachments/assets/5d59ad15-c826-4468-85f6-e1940b12d130" /><br></br>
+<img width="1920" height="1080" alt="Screenshot 2025-10-05 133744" src="https://github.com/user-attachments/assets/287d4185-bd2a-4e8c-9810-b58cc323e5a8" /><br></br>
+<img width="1920" height="1080" alt="Screenshot 2025-10-05 133753" src="https://github.com/user-attachments/assets/ce0bbdbd-0d51-48f7-adc7-d2e3b154dcc2" /><br></br>
 - Dashboard for client projects managed by the administrator
 <img width="1912" height="808" alt="Screenshot 2025-08-19 223720" src="https://github.com/user-attachments/assets/50d0a38a-3a83-4770-8b68-48e7ffd58ce9" /><br></br>
 - Personal user profile for logging in or downloading projects
