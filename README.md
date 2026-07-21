@@ -11,8 +11,8 @@
 
 <div align="center">
   
-  ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-8.0-512BD4?logo=dotnet)
-  ![Entity Framework Core](https://img.shields.io/badge/EF_Core-8.0-512BD4?logo=entity-framework)
+  ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-10.0-512BD4?logo=dotnet)
+  ![Entity Framework Core](https://img.shields.io/badge/EF_Core-10.0-512BD4?logo=entity-framework)
   ![SQL Server](https://img.shields.io/badge/SQL_Server-2022-CC2927?logo=microsoft-sql-server)
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?logo=tailwind-css)
   ![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-FF6F00)
@@ -157,7 +157,7 @@ The website serves as a **comprehensive communication portal** between the compa
 <br/><br/>
 
 ### پنل مدیریت | Admin Dashboard
-<img src="https://github.com/user-attachments/assets/717ea10e-cd55-421d-9c6c-90ff001ac7a1" alt="Admin Dashboard Screenshot" width="800"/>
+<img src="https://github.com/user-attachments/assets/7e9e524b-79f2-4035-9697-ed8e637d1f9c" alt="Admin Dashboard Screenshot" width="800"/>
 
 <br/><br/>
 
@@ -167,12 +167,12 @@ The website serves as a **comprehensive communication portal** between the compa
 <br/><br/>
 
 ### صفحه دانلود فایل‌ها | File Download Page
-<img src="path/to/screenshot-download.png" alt="File Download Screenshot" width="800"/>
+<img src="https://github.com/user-attachments/assets/b2ad1a80-3fca-41ba-8bed-a95ace49dc5a" alt="File Download Screenshot" width="800"/>
 
 <br/><br/>
 
 ### صفحه موبایل | Mobile Responsive View
-<img src="path/to/screenshot-mobile.png" alt="Mobile View Screenshot" width="300"/>
+<img src="https://github.com/user-attachments/assets/e7f0deeb-35f0-4f3c-8a4d-ba3c27da2fc0" alt="Mobile View Screenshot" width="800"/>
 
 </div>
 
@@ -186,9 +186,9 @@ The website serves as a **comprehensive communication portal** between the compa
 
 | تکنولوژی | کاربرد |
 |-----------|--------|
-| **ASP.NET Core 8 MVC** | فریمورک اصلی بک‌اند |
+| **ASP.NET Core 10 MVC** | فریمورک اصلی بک‌اند |
 | **Entity Framework Core 8** | ORM و ارتباط با دیتابیس |
-| **SQL Server 2022** | پایگاه داده اصلی |
+| **SQL Server 2026** | پایگاه داده اصلی |
 | **C# 12** | زبان برنامه‌نویسی بک‌اند |
 | **Clean Architecture** | معماری تمیز در ۵ لایه |
 | **AutoMapper** | نگاشت خودکار بین مدل‌ها و ViewModel‌ها |
@@ -218,7 +218,7 @@ The website serves as a **comprehensive communication portal** between the compa
 
 | ابزار | کاربرد |
 |-------|--------|
-| **Visual Studio 2022** | IDE اصلی توسعه |
+| **Visual Studio 2026** | IDE اصلی توسعه |
 | **Git** | کنترل نسخه |
 | **NuGet** | مدیریت پکیج‌های دات‌نت |
 | **EF Core Migrations** | مدیریت خودکار ساختار دیتابیس |
@@ -231,9 +231,9 @@ The website serves as a **comprehensive communication portal** between the compa
 
 | Technology | Usage |
 |------------|-------|
-| **ASP.NET Core 8 MVC** | Main backend framework |
+| **ASP.NET Core 10 MVC** | Main backend framework |
 | **Entity Framework Core 8** | ORM and database communication |
-| **SQL Server 2022** | Primary database |
+| **SQL Server 2026** | Primary database |
 | **C# 12** | Backend programming language |
 | **Clean Architecture** | 5-layer clean architecture |
 | **AutoMapper** | Automatic mapping between models and ViewModels |
@@ -263,7 +263,7 @@ The website serves as a **comprehensive communication portal** between the compa
 
 | Tool | Usage |
 |------|-------|
-| **Visual Studio 2022** | Primary development IDE |
+| **Visual Studio 2026** | Primary development IDE |
 | **Git** | Version control |
 | **NuGet** | .NET package management |
 | **EF Core Migrations** | Automated database schema management |
@@ -273,41 +273,34 @@ The website serves as a **comprehensive communication portal** between the compa
 ## 📁 ساختار پروژه | Project Structure
 
 ```
-EngineeringSite/                          # Solution Root
+MutaPeimayesh/                           # Solution Root
 │
-├── EngineeringSite.Web/                  # Presentation Layer (MVC)
-│   ├── Controllers/                      # MVC Controllers
-│   │   ├── HomeController.cs            # صفحه اصلی
-│   │   ├── PortfolioController.cs       # نمونه کارها
-│   │   ├── ProjectsController.cs        # پروژه‌های کاربران
-│   │   ├── AccountController.cs         # ورود و احراز هویت
-│   │   ├── ProfileController.cs         # پروفایل کاربری
-│   │   ├── Admin/                       # پنل مدیریت
-│   │   └── HomeSettingController.cs     # تنظیمات صفحه اصلی
+├── MutaPeimayesh.Web/                   # Presentation Layer (MVC)
+│   ├── Controllers/                     # MVC Controllers
 │   ├── Views/                           # Razor Views
 │   ├── Models/                          # ViewModels مخصوص Web
 │   ├── Services/                        # سرویس‌های وب
 │   ├── Uploads/                         # فایل‌های آپلود شده
 │   └── wwwroot/                         # فایل‌های استاتیک
 │
-├── EngineeringSite.Application/         # Application Layer
+├── MutaPeimayesh.Application/           # Application Layer
 │   ├── Common/                          # ابزارهای عمومی
 │   ├── Mappings/                        # پیکربندی AutoMapper
 │   ├── Services/                        # سرویس‌های اپلیکیشن
 │   └── ViewModels/                      # ViewModels
 │
-├── EngineeringSite.Domain/              # Domain Layer
+├── MutaPeimayesh.Domain/                # Domain Layer
 │   ├── Models/                          # موجودیت‌های اصلی
 │   └── Repositories/                    # اینترفیس‌های Repository
 │
-├── EngineeringSite.Infrastructure/      # Infrastructure Layer
+├── MutaPeimayesh.Infrastructure/        # Infrastructure Layer
 │   ├── Context/                         # DbContext
 │   ├── Migrations/                      # Migration‌های EF Core
 │   ├── Options/                         # تنظیمات
 │   ├── Repositories/                    # پیاده‌سازی Repository
 │   └── Services/                        # سرویس‌های زیرساخت
 │
-└── EngineeringSite.Infra.IoC/           # Dependency Injection
+└── MutaPeimayesh.Infra.IoC/             # Dependency Injection
     └── DependencyContainer.cs           # تنظیمات DI
 ```
 
@@ -321,19 +314,19 @@ EngineeringSite/                          # Solution Root
 
 ```
 ┌─────────────────────────────────────┐
-│      EngineeringSite.Web            │  🖥️ لایه نمایش (Presentation)
+│      MutaPeimayesh.Web              │  🖥️ لایه نمایش (Presentation)
 │  (Controllers, Views, wwwroot)      │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Application    │  📋 لایه اپلیکیشن (Application)
+│      MutaPeimayesh.Application      │  📋 لایه اپلیکیشن (Application)
 │  (Services, ViewModels, Mappings)   │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Domain         │  🎯 لایه دامنه (Domain)
+│      MutaPeimayesh.Domain           │  🎯 لایه دامنه (Domain)
 │  (Entities, Repository Interfaces)  │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Infrastructure │  💾 لایه زیرساخت (Infrastructure)
+│      MutaPeimayesh.Infrastructure   │  💾 لایه زیرساخت (Infrastructure)
 │  (DbContext, Migrations, Repos)     │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Infra.IoC      │  🔗 لایه تزریق وابستگی (IoC)
+│      MutaPeimayesh.Infra.IoC        │  🔗 لایه تزریق وابستگی (IoC)
 │  (Dependency Container)             │
 └─────────────────────────────────────┘
 ```
@@ -353,19 +346,19 @@ This project follows **Clean Architecture** with 5 distinct layers, each with a 
 
 ```
 ┌─────────────────────────────────────┐
-│      EngineeringSite.Web            │  🖥️ Presentation Layer
+│      MutaPeimayesh.Web              │  🖥️ Presentation Layer
 │  (Controllers, Views, wwwroot)      │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Application    │  📋 Application Layer
+│      MutaPeimayesh.Application      │  📋 Application Layer
 │  (Services, ViewModels, Mappings)   │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Domain         │  🎯 Domain Layer
+│      MutaPeimayesh.Domain           │  🎯 Domain Layer
 │  (Entities, Repository Interfaces)  │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Infrastructure │  💾 Infrastructure Layer
+│      MutaPeimayesh.Infrastructure   │  💾 Infrastructure Layer
 │  (DbContext, Migrations, Repos)     │
 ├─────────────────────────────────────┤
-│      EngineeringSite.Infra.IoC      │  🔗 IoC / DI Layer
+│      MutaPeimayesh.Infra.IoC        │  🔗 IoC / DI Layer
 │  (Dependency Container)             │
 └─────────────────────────────────────┘
 ```
@@ -376,78 +369,6 @@ This project follows **Clean Architecture** with 5 distinct layers, each with a 
 - **Dependency Inversion:** Higher layers depend on abstractions, not implementations
 - **Testability:** Layer separation enables unit testing
 - **Maintainability:** Changes in one layer don't affect others
-
----
-
-## 🚀 شروع به کار | Getting Started
-
-### فارسی 🇮🇷
-
-1. **پیش‌نیازها:**
-   - .NET 8 SDK
-   - SQL Server 2022
-   - Visual Studio 2022 (یا JetBrains Rider)
-
-2. **راه‌اندازی:**
-   ```bash
-   git clone https://github.com/Ali0500/EngineeringSite.git
-   cd EngineeringSite
-   ```
-   - فایل `appsettings.json` را با تنظیمات دیتابیس خود پیکربندی کنید
-   - Migration‌های دیتابیس را اجرا کنید:
-     ```bash
-     dotnet ef database update --project EngineeringSite.Infrastructure --startup-project EngineeringSite.Web
-     ```
-   - پروژه را اجرا کنید:
-     ```bash
-     dotnet run --project EngineeringSite.Web
-     ```
-
-<br/>
-
-### English 🇬🇧
-
-1. **Prerequisites:**
-   - .NET 8 SDK
-   - SQL Server 2022
-   - Visual Studio 2022 (or JetBrains Rider)
-
-2. **Setup:**
-   ```bash
-   git clone https://github.com/Ali0500/EngineeringSite.git
-   cd EngineeringSite
-   ```
-   - Configure `appsettings.json` with your database connection string
-   - Apply database migrations:
-     ```bash
-     dotnet ef database update --project EngineeringSite.Infrastructure --startup-project EngineeringSite.Web
-     ```
-   - Run the project:
-     ```bash
-     dotnet run --project EngineeringSite.Web
-     ```
-
----
-
-## 🤝 مشارکت | Contributing
-
-### فارسی 🇮🇷
-
-اگر تمایل به مشارکت در توسعه این پروژه دارید، لطفاً:
-1. Repository را Fork کنید
-2. یک Branch جدید ایجاد کنید (`git checkout -b feature/YourFeature`)
-3. تغییرات خود را Commit کنید (`git commit -m 'Add YourFeature'`)
-4. Branch خود را Push کنید (`git push origin feature/YourFeature`)
-5. یک Pull Request ایجاد کنید
-
-### English 🇬🇧
-
-If you'd like to contribute to this project:
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add YourFeature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
 
 ---
 
@@ -463,9 +384,6 @@ This project is licensed under the MIT License.
 
 <div align="center">
   
-**Made with ❤️ by Ali Golbabaei**
-
-[![GitHub](https://img.shields.io/badge/GitHub-Ali0500-181717?logo=github)](https://github.com/Ali0500)
-[![Email](https://img.shields.io/badge/Email-Contact%20Us-EA4335?logo=gmail)](mailto:info@motapayamesh.ir)
+**Made by ![Ali G.Baei](https://github.com/Ali-GBaei/)**
 
 </div>
